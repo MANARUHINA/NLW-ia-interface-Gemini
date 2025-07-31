@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--aqui e a fonte do projeto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--aqui acaba a fonte do projeto-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--acessar a parte de style-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+         <!--imagem da logo-->
+        <img src="assets/logo.png" alt="Logo do evento NLW">
+    </header>
+    <main>
+        <section>
+            <div>
+            <h2>Assistente de Meta</h2>
+            <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">
+            <div class="api-hover-area">
+            <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">
+            <button id="obterchave">Obter API Key do Gemini</button>
+            </a>
+            </div>
+            <p> Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+            <form id="form">
+                <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" >
+                <input id="gameSelect" list="gameOptions" placeholder="Digite ou escolha um jogo">
+                <datalist id="gameOptions">
+                <option value="Valorant">
+                <option value="League of Legends">
+                <option value="Dota2">
+                </datalist>
+                <input id="questionInput" type="text" placeholder="Melhor build para Adc">
+                <button id="askButton"> Perguntar</button>
+            </form>
+            <div id="aiResponse" class="hidden">
+                <div class="response-content"></div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<<<<<<< HEAD
+   <script src="/script2.js"></script>
+=======
+   <script src="/script.js"></script>
+>>>>>>> 2415fc6ea81af7acd8aef487cad072998f928df9
+</body>
+</html>
